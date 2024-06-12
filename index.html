@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula Química</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ácido y base </h1>
+    </header>
+    <main>
+        <section class="formula">
+            <h2>Introducción</h2>
+            <p class="intro">
+                Aquí encontrarás de como poder de dar con el resultado y entender sobre ácidos y bases, molaridad y constantes de equilibrio.
+            </p>
+        <section class="excel">
+            <p>
+            Para simplificar estos cálculos, hemos creado una hoja de Excel que aplica las fórmulas. Puedes descargarla aquí mismo.
+            </p>
+            <div id="app">
+                <a href="calculadora_acido_base.xlsx" download>
+                Descargar excel</a>
+            </div>
+            <p>Nota: Excel pone E como notación científica.
+            <br>Un ejemplo sería: a x 10<sup>b</sup> se denota como aEb
+            </p>
+        </section>
+        </section>
+
+
+
+        <section class="mol">
+            <h2>Molaridad</h2>
+            <h3>Explicación de la fórmula:</h3>
+            <p>
+            Esta fórmula es la base para todas las siguientes, ya que todas ellas hacen uso de una u otra manera de la molaridad, por lo que explicaremos cómo se puede calcular esta. Para calcular la molaridad, es necesario dividir la cantidad de moles presentes por el volumen en litros.
+            </p>
+            
+            <h3>De qué se compone la fórmula:</h3>
+            <p>n: Cantidad de moles <br> V: Volumen(L) <br> M: Molaridad
+            </p>
+            <h3>Fórmula:</h3>
+            <p>Cantidad de moles / Volumen(L) = Molaridad</p>
+
+        </section>
+
+        
+        <section class="acido_base_debil">
+            <h2>Calcular pH/pOH para ácido y bases débiles</h2>
+            <h3>Ácidos débiles</h3>
+            <h4>Explicación de la fórmula:</h4> 
+            <p>
+                Para calcular el pH de un ácido débil necesitamos saber cuál es la concentración del ion [H+], la cual se calcula de la siguiente manera:
+            </p>
+            
+            <p>[H+] = √(M x K<sub>a</sub>)</p>  
+
+            <p> 
+            Una vez sabemos la concentración de [H+], lo siguiente sería calcular el logaritmo negativo de la concentración de [H+] con la siguiente fórmula: 
+            </p>
+            <h4>De qué se compone la fórmula:</h4>
+            <p>M: Molaridad</p>
+            <p>Ka: Constante de ácidez</p>
+            <p>[H+]: Iones de Hidrógeno</p>
+            <h4>Fórmula:</h4>
+            <p>[H+] = √(M x K<sub>a</sub>)</p>
+            <p>pH = -log([H+])</p>
+            <h3>Bases débiles</h3>
+            
+            <h4>Explicación de la fórmula:</h4> 
+            <p>Para calcular el pOH de una base débil necesitamos saber cuál es la concentración del ion [OH-], la cual se calcula de la siguiente manera:</p>
+            <p>[OH-] = √(M x K<sub>b</sub>)</p>    
+            <p>Una vez sabemos la concentración de [OH-], lo siguiente sería calcular el logaritmo negativo de la concentración de [OH-] con la siguiente fórmula:</p>
+            
+            <h4>De qué se compone la fórmula:</h4>
+            <p>M: Molaridad</p>
+            <p>Kb: Constante de Basicidad</p>
+            <p>[OH-]: Iones de Hidróxido</p>
+            
+            <h4>Fórmula:</4>
+            <p> [OH-] = √(M x K<sub>b</sub>)</p>
+            <p>pOH = -log([OH-])</p>
+
+        <section class="acido_base_fuerte">
+            <h2>Calcular pH/pOH para ácido y bases fuertes</h2>
+            <h3>Ácidos fuertes</h3>
+            
+            <h4>Explicación de la fórmula:</h4> 
+            <p> Para poder calcular el pH un ácido fuerte solamente necesitamos saber la molaridad del ácido, ya que esta es igual a la concentración de su ion [H+], ósea:</p>
+            <p>[H+] = (Molaridad)</p>
+            <p>Y una vez sabido esto, para calcular su pH podemos utilizar una fórmula muy parecida a la de un ácido débil, siendo este el logaritmo negativo de la concentración de [H+].</p>
+            
+            <h4>De qué se compone la fórmula:</h4>
+            <p>M: Molaridad</p>
+            <p>[H+]: Iones de hidrógeno</p>
+            <h4>Fórmula:</4>
+            <p>-log([H+])</p>
+            <h3>Bases fuertes</h3>
+            
+            <h4>Explicación de la fórmula:</h4> 
+            <p>Para poder calcular el pOH de una base fuerte solamente necesitamos saber la molaridad de la base, ya que esta es igual a la concentración de su ion [OH-], ósea:</p>
+            <p>[OH-] = (Molaridad)</p>
+            <p>Y una vez sabido esto, para calcular su pOH podemos utilizar una fórmula muy parecida a la de una base débil, siendo este el logaritmo negativo de la concentración de [OH-].</p>
+            
+            <h4>De qué se compone la fórmula:</h4>
+            <p>M: Molaridad</p>
+            <p>[OH-]: Iones de Hidróxido</p>
+            <h4>Fórmula:</4>
+            <p>-log([OH-])</p>
+            
+
+                <section class="iones">
+                    <h2>Calcular concentración de iones sin molaridad</h2>
+                    <h3>Iones de H+</h3>
+                    <h3>Explicación de la fórmula:</h3>
+                    <p>Cuando solo se tiene el pH pero no molaridad, la concentración de iones de hidrógeno se calcula de la siguiente manera:</p>
+                    <p>[H+] = 10^(-pH)</p>
+                    <p>o bien</p>
+                    <p>[H+] = antilog(-pH)</p>             
+                    
+                    <h3>De qué se compone la fórmula:</h3>
+                    <p>pH</p>
+                    <p>[H+]: Concentración de iones de Hidrógeno</p>
+                    <h3>Fórmula:</h3>
+                    <p>[H+] = 10^(-pH) O [H+] = antilog(-pH)</p>
+                    <h3>Iones de OH-</h3>
+                    
+                    <h4>Explicación de la fórmula:</h4>
+                    <p>Cuando solo se tiene el pOH pero no molaridad, la concentración de iones de hidróxido se calcula de la siguiente manera:</p>
+                    <p>[OH-] = 10^(-pOH)</p>
+                    <p>o bien</p>
+                    <p>[OH-] = antilog(-pOH)</p>             
+                    
+                    <h3>De qué se compone la fórmula:</h3>
+                    <p>pOH</p>
+                    <p>[OH-]: Concentración de iones de Hidróxido</p>
+                    <h3>Fórmula:</h3>
+                    <p>[OH-] = 10^(-pOH) O [OH-] = antilog(-pOH)</p>
+
+        <section class="constante">
+            <h2>Calcular Constantes</h2>
+            <h3>Constante de Ácidez</h3>
+            <h3>Explicación de la fórmula:</h3>
+            <p>Para calcular la constante de ácidez necesitamos multiplicar la concentración de los reactantes por la del ácido.</p>
+            
+            <h3>De qué se compone la fórmula:</h3>
+            <p>Concentración de [A-]
+               <br>Concentración de [H+]
+               <br>[HA]: Concentración del ácido
+            </p>
+            <h3>Fórmula:</h3>
+            <p> ([A-]*[H+])/[HA]</p>
+            <h3>Constante de Basicidad</h3>
+            
+            <h3>Explicación de la fórmula:</h3>
+            <p>Para calcular la constante de basicidad necesitamos multiplicar la concentración de los reactantes por la de la base.</p>
+            <h3>De qué se compone la fórmula:</h3>
+            <p>Concentracion de [BH+]
+               <br>Concentracion de [OH-]
+               <br>[B]: Concentracion de la base
+            </p>
+            <h3>Fórmula:</h3>
+            <p> ([BH+]*[OH-])/[B]</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Grupo 21 Tema 7 </p>
+    </footer>
+</body>
+</html>
